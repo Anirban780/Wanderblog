@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
       if (session) {
         try {
           const token = await session.getToken();
-          console.log(token);
+          //console.log(token);
     
           setIsAuthenticated(true);
         } catch (error) {
